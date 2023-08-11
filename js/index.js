@@ -1,4 +1,4 @@
-// Define canvas as 2d.
+// Define context
 const c = document.getElementById("canvas").getContext("2d");
 
 const player = new Player()
@@ -11,7 +11,7 @@ function createCanvas() {
 
 // Create animation loop
 function main() {
-    requestAnimationFrame(main);
+    window.requestAnimationFrame(main);
     createCanvas();
     player.draw();
     player.update();
@@ -21,3 +21,8 @@ function main() {
 window.onload = function() {
     main();
 }
+
+// Listen for keydowns
+window.addEventListener("keydown", (event) => {
+
+});
