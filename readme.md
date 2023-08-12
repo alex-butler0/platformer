@@ -1,21 +1,40 @@
 ## Outline
+### Project Description
 
 ### Steps
 1. Create player
 2. Create animation loop
 3. Create bottom vertical collision
 4. Create gravity
-5. Create "move left" and "move right"
+5. Create "move left" and "move right" (ensure player can idle)
 6. Create horizontal collision
 7. Create "jump"
 8. Create platforms
 9. Create top vertical collision
 
 ## Developer Notes
+### Objective
+- Become familiar with 2D platformer design and mechanics
+- Expand JavaScript skillset
+- Develop the skills necessary to create my own JavaScript platformer from scratch
+
+### Future Plans
+Potentially implement a 2D platformer into a web development project as a form of navigation. 
 
 ### Bugs
-1. Player.js - vertical clipping registration
+#### Ongoing
+
+
+#### Resolved
+1. Player.js - vertical clipping registration 
+    // Add gravity.
+    // BUG: For some reason, need to apply a speed multiplier >= 1.37 for player to not clip floor. 
+            // RESULT: Choppy landing visual. 
+            // LOGIC: Distance between player and canvas should be equivalent to player model + position + 1 * speed.
+            // EDIT: Moved "this.sides.bottom =" outside of the conditional statement. Landing is still choppy, but no more floor clipping. 
 
 ## References
-- Player (girl) asset pack courtesy of ANT_games under no license.
-- Background asset pack courtesy of MonibTaha under CC0 License
+- Created alongside tutorial "Multi-room Platformer Game Tutorial with JavaScript and HTML Canvas" by Chris Courses
+- Player (girl) asset pack courtesy of ANT_games (no license)
+- Background asset pack courtesy of MonibTaha (CC0 License)
+
