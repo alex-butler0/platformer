@@ -6,7 +6,7 @@ window.addEventListener("keydown", (event) => {
         case "w": 
             // Add conditional to prevent infinite jumping when off the ground.
             // CON: This still allows infinite jumping if the player holds the key or times their inputs perfectly to the peak of each jump. 
-            if (player.speed.y == 0) {player.speed.y = -20}
+            if (player.speed.y == 0) {player.speed.y = -15}
             break;
         // Initiate player left movement keydown. 
         case "a":

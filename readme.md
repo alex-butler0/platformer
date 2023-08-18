@@ -7,10 +7,15 @@
 3. Create bottom vertical collision
 4. Create gravity
 5. Create "move left" and "move right" (ensure player can idle)
-6. Create horizontal collision
-7. Create "jump"
-8. Create platforms
-9. Create top vertical collision
+6. Create "jump"
+7. Import a static background sprite
+8. Import a static player sprite
+
+- Create sidescroller background effect
+- Import player idle animations
+- Create horizontal collision
+- Create platforms
+- Create top vertical collision
 
 ## Developer Notes
 ### Objective
@@ -37,4 +42,4 @@ Potentially implement a 2D platformer into a web development project as a form o
 - Created alongside tutorial "Multi-room Platformer Game Tutorial with JavaScript and HTML Canvas" by Chris Courses
 - Player (girl) asset pack courtesy of ANT_games (no license)
 - Background asset pack courtesy of MonibTaha (CC0 License)
-
+- Woods asset pack courtesy of brullov (no license)

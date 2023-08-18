@@ -12,7 +12,8 @@ class Sprite {
     }
     // Render sprite.
     draw() {
-        if (!this.loaded) return 
-        c.drawImage(this.image, this.position.x, this.position.y);
+        if (this.loaded) {
+            c.drawImage(this.image, this.position.x, this.position.y, canvas.width, canvas.height);
+        }
     }
 }
